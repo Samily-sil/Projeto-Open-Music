@@ -1,22 +1,32 @@
 header {
+    background-color: var(--gray-0);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: auto;
-    height: 100px   ;
-    max-width: 1024px;
-    padding: 10px;
+    height: 100px;
     color: var(--gray-1);
-    border-bottom: 3px solid var(--brand-1);
-    position: sticky;
-    margin-bottom: 15px;
+    border-bottom: 3px solid var(--brand-2);
+    padding: 16px 24px;  
+    margin: 0 auto;
+    max-width: 1024px;  
+    width: calc(100% - 20px);  
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-sizing: border-box;
 }
 
-.highlight{
-    color: var(--brand-1);
+main {
+    margin-top: 110px; 
 }
 
-button {
+.highlight {
+    color: var(--brand-2);
+}
+
+#theme-toggle {
     background-color: var(--gray-6);
     padding: 5px 10px;
     border-radius: 5px;

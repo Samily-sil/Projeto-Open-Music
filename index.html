@@ -29,64 +29,111 @@
     <main>
       <!-- SEÇÃO DE FILTRO POR GENERO -->
       <section class="genre-filter">
-        <h2>Gênero Musical</h2>
-        <ul>
-            <li><input type="text" id="rock"> <label for="rock">Rock</label></li>
-            <li><input type="text" id="pop"> <label for="pop">Pop</label></li>
-            <li><input type="text" id="jazz"> <label for="jazz">Jazz</label></li>
-            <li><input type="text" id="hiphop"> <label for="hiphop">Hip-Hop</label></li>
-            <li><input type="text" id="classical"> <label for="classical">Clássico</label></li>
-            <li><input type="text" id="indie"> <label for="indie">Indie</label></li>
-        </ul>
-  </section>
+        <h2 class="music-genre">Gênero Musical</h2>
+        <div class="label-div">
+          <label class="todos"><input type="radio" name="genre" value="all" checked><span>Todos</span></label>
+          <label class="label"><input type="radio" name="genre" value="rock" ><span>Rock</span></label>
+          <label class="label"><input type="radio" name="genre" value="pop" ><span>Pop</span></label>
+          <label class="label"><input type="radio" name="genre" value="jazz" ><span>Jazz</span></label>
+          <label class="label"><input type="radio" name="genre" value="hiphop" ><span>Hip-Hop</span></label>
+          <label class="label"><input type="radio" name="genre" value="classical" ><span>Clássico</span></label>
+          <label class="label"><input type="radio" name="genre" value="indie" ><span>Indie</span></label>
+        </div>
+      </section>
 
       <!-- SEÇÃO DE FILTRO POR PREÇO -->
-      <section class="price-filter">
-        <h2>Definir Preço</h2>
+       <section class="price-filter">
+        <div class="price-number">
+          <h2>Definir Preço</h2>
+          <span class="price-input">Até <span class="price-value">R$ 100</span></span>
+        </div>
         <input type="range" 
                min="0" 
                max="100" 
                step="1" 
                value="50" 
                id="price-range">
-        <span>Até R$ 100</span>
       </section>
 
-      <!-- SEÇÃO DE ALBUNS -->
-      <section>
-        <h2>Álbuns</h2>
-        <div class="album">
-            <img src="./src/assets/imgs/cover-1.png" alt="Album 1">
-            <h3>Album 1</h3>
-            <p>R$ 30</p>
-        </div>
-        <div class="album">
-            <img src="./src/assets/imgs/cover-2.png" alt="Album 2">
-            <h3>Album 2</h3>
-            <p>R$ 40</p>
-        </div>
-        <div class="album">
-            <img src="./src/assets/imgs/cover-3.png" alt="Album 3">
-            <h3>Album 3</h3>
-            <p>R$ 50</p>
-        </div>
-        <div class="album">
-            <img src="./src/assets/imgs/cover-1.png" alt="Album 4">
-            <h3>Album 4</h3>
-            <p>R$ 30</p>
-        </div>
-        <div class="album">
-            <img src="./src/assets/imgs/cover-2.png" alt="Album 5">
-            <h3>Album 5</h3>
-            <p>R$ 40</p>
-        </div>
-        <div class="album">
-            <img src="./src/assets/imgs/cover-3.png" alt="Album 6">
-            <h3>Album 6</h3>
-            <p>R$ 50</p>
-        </div>
-      </section>
-    </main>
+      <!-- SEÇÃO DE FILTRO POR PREÇO -->
+       <section class="albums-section">
+        <h2 class="album-text">Álbuns Encontrados</h2>
+          <section class="albums">
+            <div class="album">
+                <img src="./src/assets/imgs/cover-1.png" alt="Acabou o Chorare">
+                <h3 class="music-name">Acabou o Chorare</h3>
+                <div class="div-1">
+                  <p class="music-singer">Novos Baianos</p>
+                  <span class="music-style">MPB</span>                  
+                </div>
+                <div class="div-2">
+                  <h3 class="price">R$ 137,91</h3>
+                  <button class="buy-btn">Comprar</button>                  
+                </div>
+            </div>
+            <div class="album">
+                <img src="./src/assets/imgs/cover-2.png" alt="The Wall">
+                <h3 class="music-name">The Wall</h3>
+                <div class="div-1">
+                  <p class="music-singer">Pink Floyd</p>
+                  <span class="music-style">Rock</span>                  
+                </div>
+                <div class="div-2">
+                  <h3 class="price">R$ 123,56</h3>
+                  <button class="buy-btn">Comprar</button>                  
+                </div>
+            </div>
+            <div class="album">
+                <img src="./src/assets/imgs/cover-3.png" alt="To Pimp a Butterfly">
+                <h3 class="music-name">To Pimp a Butterfly</h3>
+                <div class="div-1">
+                  <p class="music-singer">Kendrick Lamar</p>
+                  <span class="music-style">Rap</span>                
+                </div>
+                <div class="div-2">
+                  <h3 class="price">R$ 102,66</h3>
+                  <button class="buy-btn">Comprar</button>                  
+                </div>
+            </div>
+            <div class="album">
+                <img src="./src/assets/imgs/cover-2.png" alt="The Wall">
+                <h3 class="music-name">The Wall</h3>
+                <div class="div-1">
+                  <p class="music-singer">Pink Floyd</p>
+                  <span class="music-style">Rock</span>                  
+                </div>
+                <div class="div-2">
+                  <h3 class="price">R$ 123,56</h3>
+                  <button class="buy-btn">Comprar</button>                  
+                </div>
+            </div>
+            <div class="album">
+                <img src="./src/assets/imgs/cover-1.png" alt="Acabou o Chorare">
+                <h3 class="music-name">Acabou o Chorare</h3>
+                <div class="div-1">
+                  <p class="music-singer">Novos Baianos</p>
+                  <span class="music-style">MPB</span>                  
+                </div>
+                <div class="div-2">
+                  <h3 class="price">R$ 137,91</h3>
+                  <button class="buy-btn">Comprar</button>                  
+                </div>
+            </div>
+            <div class="album">
+                <img src="./src/assets/imgs/cover-3.png" alt="To Pimp a Butterfly">
+                <h3 class="music-name">To Pimp a Butterfly</h3>
+                <div class="div-1">
+                  <p class="music-singer">Kendrick Lamar</p>
+                  <span class="music-style">Rap</span>                
+                </div>
+                <div class="div-2">
+                  <h3 class="price">R$ 102,66</h3>
+                  <button class="buy-btn">Comprar</button>                  
+                </div>
+            </div>
+          </section>
+        </section>
+      </main>
     <script src="./src/scripts/index.js"></script>
   </body>
 </html>

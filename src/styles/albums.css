@@ -1,1 +1,92 @@
-/* Estilização dos Álbuns */
+.album {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--gray-7);
+    width: 308px;
+    height: 455px;
+    border-radius: 4px;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    margin: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.albums {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.album-text {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color: var(--gray-1);
+    text-align: left;
+}
+
+.album:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.music-name {
+    padding: 5px 15px;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 100%;
+    vertical-align: middle;
+}
+
+.div-1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 15px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    margin-bottom: 10px;
+}
+
+.div-2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 15px;
+    align-items: center;
+}
+
+.music-singer {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+}
+
+.music-style {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    vertical-align: middle;
+}
+
+.price {
+    font-weight: 600;
+    font-size: 19.2px;
+    line-height: 100%;
+}
+
+.buy-btn {
+    color: #fff;
+    background-color: var(--brand-1);
+    width: 87px;
+    height: 20px;
+    border-radius: 4px;
+    gap: 10px;
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    border-width: 1px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 0px;
+}
