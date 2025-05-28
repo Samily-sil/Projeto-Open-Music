@@ -1,5 +1,4 @@
 /* Reset de estilos padrão */
-
 *,
 *::before,
 *::after {
@@ -39,7 +38,3 @@ input, select, textarea {
     outline: none;
     background: none;
 }
-
-/* * {
-    transition: all 0.2s ease-in-out;
-} */

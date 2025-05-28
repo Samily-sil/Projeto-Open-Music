@@ -1,5 +1,4 @@
 import { applyInputRangeStyle } from "./inputRange.js";
-// import { albumList } from "./albumsDatabase.js";
 import { fetchAlbums } from './api.js';
 import { applyTheme } from "./theme.js";
 
