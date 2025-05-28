@@ -12,3 +12,4 @@ export function applyInputRangeStyle () {
 
     priceRange.addEventListener("input", updateTrackColor);
 }
+

@@ -22,7 +22,7 @@
     appearance: none;
     width: 20px;
     height: 20px;
-    background: #fff;
+    background: var(--gray-0);
     border: 0.3rem solid var(--brand-1);
     border-radius: 50%;
     cursor: pointer;
@@ -33,7 +33,7 @@
 #price-range::-moz-range-thumb {
     width: 20px;
     height: 20px;
-    background: #fff;
+    background: var(--gray-0);
     border: 0.3rem solid var(--brand-1);
     border-radius: 50%;
     cursor: pointer;
@@ -41,6 +41,7 @@
 }
 
 .price-number{
+    color: var(--gray-1);
     display: flex;
     justify-content: space-between;
     padding-top: 32px;

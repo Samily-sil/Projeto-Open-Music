@@ -2,7 +2,7 @@
 
 :root {
     --gray-0: #fff;
-    --gray-1: #212529;
+    --gray-1: #292621;
     --gray-2: #2B2F33;
     --gray-3: #2B2F33;
     --gray-4: #ADB5BD; 
@@ -16,7 +16,7 @@
 
     --font-family: 'Inter', sans-serif;
     --padding: 16px;
-    --max-width: 1024px;
+    --max-width: 1124px;
 }
 
 body {
@@ -25,5 +25,21 @@ body {
     margin-right: auto;
     padding: var(--padding);
     max-width: var(--max-width);
+    background-color: var(--gray-0);
+}
+
+.dark-mode {
+    --gray-0: #212529;  
+    --gray-1: #E0E0E0;  
+    --gray-2: #F1F3F5; 
+    --gray-3: #2C2C2C;
+    --gray-4: #B0B0B0;
+    --gray-5: #999999;
+    --gray-6: #2B2F33;     
+    --gray-7: #2B2F33;
+    --gray-8: #F8F9FA;
+    --gray-9: #000000;
+    --brand-1: #6F00FF;
+    --brand-2: #8629FF;
 }
 

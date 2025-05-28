@@ -42,3 +42,4 @@ export const albumList = [
     img: "./src/assets/imgs/cover-6.jpg",
   },
 ];
+
